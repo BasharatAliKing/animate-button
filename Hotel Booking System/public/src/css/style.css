@@ -1,0 +1,254 @@
+html{
+    /* scroll-behavior: smooth; */
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif; */
+}
+#hotel{
+    position: absolute;
+    background: url('/src/img/lw1438_72032702_720x450.jpg')no-repeat center center/cover;
+   width: 100%;
+    background-attachment: fixed;
+    
+}
+
+form .box{
+    display: inline;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+h2{
+    background-color: #00000085;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin: 20px 0px;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bolder;
+}
+h3{
+    color:white;
+}
+form label{
+    font-weight: 600;
+    margin: 0px;
+    margin-top: 10px;
+    color: white;
+}
+form input{
+    margin-top:5px ;
+}
+form #room-type{
+    margin-top: 20px;
+}
+form #room-type img{
+    width: 80%;
+    border-radius: 10px;
+    padding: 0px 80px;
+    padding-left: 0px;
+    margin-top: 40px;
+}
+form #room-type .radio{
+    font-size: 50px;
+}
+form #room-type .radio-btn{
+    display: flex;
+    margin-top: 10px;
+}
+form #room-type h4{
+    color:white;
+    margin-top: -8px;
+    margin-left: 5px;
+}
+form #amenities{
+    margin-top: 50px;
+}
+form #amenities img{
+    object-fit: fill;
+    border-radius: 20px;
+    position: relative;
+    width:50%;
+    height: 80%;
+}
+form #amenities .checkbox-btn{
+    display: flex;
+    margin-top: 10px;
+}
+form #amenities h4{
+    color: white;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+form #submit{
+    text-align: center;
+    width: 100%;
+
+}
+form #submit .btn{
+    margin: 40px 0px;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+    padding: 10px 80px;
+    font-family: 'Inter', sans-serif;
+    width: 20%;
+}
+form #submit .btn:hover{
+    transition: 1s;
+    background-color: black;
+}
+footer{
+    color: white;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+#bd  #Data{
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    border-radius: 20px;
+    transform: translate(90%,20%);
+}
+#bd #Data h3{
+    text-align: center;
+    margin: 20px 0px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+#bd div{
+    margin-top: 10px;
+}
+#bd span{
+    margin-left: 20px;
+}
+#upper-suite{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(35deg);
+    right: 180px;
+    top: 15px;
+    background-color: #00000085;
+    padding: 14px 10px;
+    margin: 0px;
+    border-radius: 50%;
+}
+#upper-suite h3{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+#upper-delux{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(35deg);
+    right: 180px;
+    top: 15px;
+    background-color: #00000085;
+    padding: 14px 10px;
+    margin: 0px;
+    border-radius: 50%;
+}
+#upper-delux h3{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+#upper-locker{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(35deg);
+    right: 270px;
+    top: -15px;
+    background-color: #00000085;
+    padding: 10px 10px;
+    margin: 0px;
+    border-radius: 50%;
+}
+#upper-locker h3{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+#upper-ac{
+    position: absolute;
+    z-index: 5;
+    transform: rotate(35deg);
+    right: 260px;
+    top: -10px;
+    background-color: #00000085;
+    padding: 13px 10px;
+  
+    margin: 0px;
+    border-radius: 50%;
+}
+#upper-ac h3{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+#increment{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width:576px){
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    form #room-type img{
+        width: 90%;
+        border-radius: 10px;
+        padding: 0px 0px;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    form #amenities img{
+        width:90%;
+        height: 80%;
+    }
+    #upper-suite{
+        right: 20px;
+        top: 20px;
+    }
+    #upper-delux{
+        right: 20px;
+        top: 20px;
+    }
+    #upper-locker{
+        right: 30px;
+        top: -15px;
+    }
+    #upper-ac{
+        right: 30px;
+        top: -20px;
+    }
+   form #submit .btn{
+        width: 80%;
+        padding: 10px;
+    }
+    footer{
+        font-size: 12px;
+    }
+    #bd #Data{
+        width: 90%;
+        transform: translate(5%,16%);
+    }
+}

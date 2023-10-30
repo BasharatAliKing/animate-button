@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="manifest" href="%src_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+  <section id="bd"></section>
+    <section id="hotel">
+      <div id="forms">
+        <div  class="container">
+          <h1>Hotel Registeration Form</h1>
+       <form method="post" >
+          <h2>Customer Info</h2>
+           <div class="box">
+            <div class="row">
+            <div class='col-md-6'>
+         <label >Customer Name:</label>
+          <input type="text" id="name" placeholder='Enter Name' class='form-control' name="name" />
+         </div>
+         <div class='col-md-6'>
+         <label >Customer ID:</label>
+          <input type="text" id="id" placeholder='ID' minLength={13} maxLength={13} class='form-control' name="id" />
+         </div>
+            </div>
+           </div>
+           <div class="box">
+            <div class="row">
+            <div class='col-md-6'>
+              <label >Check in Date:</label>
+          <input type="date" id="date" placeholder='Enter Name' class='form-control' name="date" />
+              </div>
+              <div class='col-md-6'>
+              <label >Total Number of Persons:</label>
+          <input type="number" id="person" placeholder='No of Persons' class='form-control' name="person"/>
+              </div>
+            </div>
+           </div>
+        
+         <div class="box">
+        <div class="row">
+          <div class="col-md-6">
+          <label >Total Number of Days:</label>
+          <input type="number" id="days" placeholder='No of Days' class='form-control' name="days" />
+          </div>
+        </div>
+         </div>
+      
+         <div id="room-type"> 
+           <h2>Select Room Type</h2>
+         <div class="row">
+          <div class="col-md-6">
+              <img src="src/img/suite-room.jpg" width="100%" alt="" />
+              <div id="upper-suite">
+                <h3>2500</h3>
+              </div>
+              <div class="radio-btn">
+           <div>  <input class='radio' id="delux-room" type="radio" name='room' value="Suite Room"  /></div> <div><h3>Delux Room</h3></div>
+             </div>
+          </div>
+          <div class="col-md-6">
+              <img src="./src/img/delux-room.jpg" width="100%" alt="" />
+              <div id="upper-delux">
+                <h3>4000</h3>
+              </div>
+             <div class="radio-btn">
+           <div>  <input class='radio' id="suite-room" type="radio" name='room' value="Delux Room" /></div> <div><h3>Suite Room</h3></div>
+             </div>
+          </div>
+        </div>
+         </div>
+        <h2>Select Amenities</h2>
+        <div id="amenities">
+        <div class="row">
+          <div class=" col-md-6">
+          <img src="/src/img/locker.jpg" width="100%" alt="" />
+          <div id="upper-locker">
+            <h3>300</h3>
+          </div>
+          <div class="checkbox-btn">
+           <div>  <input class='checkbox' id="locker" type="checkbox"  name="locker" /></div> <div><h3>Locker</h3></div>
+             </div>
+          </div>
+          <div class=" col-md-6">
+          <img src="/src/img/ac.jpg" width="100%" alt="" />
+          <div id="upper-ac">
+            <h3>1000</h3>
+          </div>
+          <div class="checkbox-btn">
+           <div>  <input class='checkbox' id="ac" type="checkbox"  name="ac" /></div> <div><h3>A/C</h3></div>
+             </div>
+          </div>
+         
+        </div>
+        </div>
+        <h2>Advance Amount</h2>
+         <div id="advance-amount">
+          <div class="row">
+              <div class="col-md-6">
+                  <label >Enter Amount</label>
+                  <input type="number" id="amount" placeholder='Amount Enter ' class='form-control' name="advance" />
+              </div>
+          </div>
+         </div>
+           <div id='submit' class="row">
+          <div class="col-12">
+          <input type="submit" id="submit" class='btn' value="Register" />
+          </div>
+           </div>
+       </form>
+     </div>
+     <footer>Copyright &copy; basharatalidogar14@gmail.com All Right Reserved! </footer>
+       
+      </div>
+    </section>
+    <section id="Data">
+      <div class="container">
+        <h3>Booking Details</h3>
+        <div id="increment">After Two Persons Increment 1000 by per person:<span id="incrementaftertwo"></span></div>
+          <div>Name:<span id="paste-name"></span></div> 
+          <div>ID:<span id="paste-id"></span></div>
+          <div>Date:<span id="paste-date"></span></div> 
+          <div>Total Persons:<span id="paste-person"></span></div> 
+          <div>Total No of Days:<span id="paste-days"></span></div>
+          <div  id="paste-deluxprice"><span></span></div>
+          <div  id="paste-amenitie"><span></span></div>
+          <div>Total Amount:<span id="total-amount"></span></div>
+          <div>Advance Amount:<span id="advance-amount"></span></div>
+          <div>Remaining Amount:<span id="paste-amount"></span></div>
+         
+
+       
+      </div>
+    </section>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
